@@ -1,12 +1,14 @@
 ﻿# STM32F1 工程模板
 
-基于 STM32F1 标准外设库的 Keil MDK 裸机工程模板。
+## 项目目标
 
-## 内容
-- User：应用入口和中断处理
+提供基于 STM32F1 标准外设库的裸机工程基线，减少新建工程时重复配置启动、时钟、外设和中断代码的工作量。
+
+## 目录说明
+- User：应用入口、中断处理和配置文件
 - Library：STM32F1 标准外设库
-- Start：启动文件和系统配置
+- Start：启动文件和系统初始化
 - project.uvprojx：Keil MDK 工程
 
-## 使用
-使用 Keil MDK5 打开 project.uvprojx，在 User/main.c 中编写应用代码。
+## 使用方式
+使用 Keil MDK5 打开工程，在 User/main.c 中编写应用逻辑，并根据开发板修改时钟和引脚配置。
